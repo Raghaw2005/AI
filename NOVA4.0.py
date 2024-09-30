@@ -8,7 +8,6 @@ import shutil
 import smtplib
 import yt_dlp  # type: ignore
 
-# Initialize the text-to-speech engine
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
@@ -47,8 +46,8 @@ def listen_for_command():
 def send_email(to_address, subject, content):
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    from_address = 'sraghaw130@gmail.com'
-    password = '798028609433977471'
+    from_address = 'users mail id' #users mail id
+    password = 'password' #password
 
     try:
         server = smtplib.SMTP(smtp_server, smtp_port)
